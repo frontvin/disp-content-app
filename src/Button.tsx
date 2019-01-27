@@ -1,15 +1,13 @@
-import React from "react";
+// Button.tsx
+import React from 'react';
 
-import "./Button.css";
+export interface Props {
+    label: string;
+    link: string;
+}
 
-const Button: React.FC = () => {
-    return (
-        <div>
-            {this.props.items.map((item, index) =>
-                <a href={item.link} key={index} className="btn">{item.label}</a>
-            )}
-        </div>
-    );
-};
-
-export { Button };
+export default function Button({ label, link }: Props) {
+    return <a href={link}>
+        <button>{label}</button>
+    </a>
+}

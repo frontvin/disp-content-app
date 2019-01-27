@@ -1,9 +1,10 @@
+// ButtonGroup.tsx
 import React from "react";
-import { Button } from "./Button";
 
+import Button, { Props as ButtonProps } from "./Button";
 import "./Buttons.css";
 
-const btnNames = [
+const btnNames: ButtonProps[] = [
   {
     label: "Posts",
     link: "/posts"
@@ -30,12 +31,10 @@ const btnNames = [
   }
 ];
 
-class Buttons extends React.Component {
-  public render(){
-    return (
-        <Button items={btnNames}/>
-    )
-  }
-};
-
-export { Buttons };
+export function Buttons() {
+  return (
+      <div className="ButtonGroup">
+        {btnNames.map(button => <Button key={button.label} {...button} />)}
+      </div>
+  );
+}
