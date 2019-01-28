@@ -12,7 +12,3 @@ export default function Button({ label }: IProps) {
     <button className="navLink">{label}</button>
   );
 }
-
-function clicked() {
-  
-}
