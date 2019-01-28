@@ -1,4 +1,3 @@
-// ButtonGroup.tsx
 import React from "react";
 
 import Button, { Props as ButtonProps } from "./Button";
@@ -7,34 +6,34 @@ import "./Buttons.css";
 const btnNames: ButtonProps[] = [
   {
     label: "Posts",
-    link: "/posts"
+    link: "/posts",
   },
   {
     label: "Comments",
-    link: "/comments"
+    link: "/comments",
   },
   {
     label: "Albums",
-    link: "/albums"
+    link: "/albums",
   },
   {
     label: "Photos",
-    link: "/photos"
+    link: "/photos",
   },
   {
     label: "Todos",
-    link: "/todos"
+    link: "/todos",
   },
   {
     label: "Users",
-    link: "/users"
-  }
+    link: "/users",
+  },
 ];
 
 export function Buttons() {
   return (
-      <div className="ButtonGroup">
-        {btnNames.map(button => <Button key={button.label} {...button} />)}
+      <div className="buttonGroup">
+        {btnNames.map((button) => <Button key={button.label} {...button} />)}
       </div>
   );
 }
