@@ -1,9 +1,9 @@
 import React from "react";
 
-import Button, { Props as ButtonProps } from "./Button";
+import Button, { IProps } from "./Button";
 import "./Buttons.css";
 
-const btnNames: ButtonProps[] = [
+const btnNames: IProps[] = [
   {
     label: "Posts",
     link: "/posts",
@@ -30,7 +30,7 @@ const btnNames: ButtonProps[] = [
   },
 ];
 
-export function Buttons() {
+export function ButtonsGroup() {
   return (
       <div className="buttonGroup">
         {btnNames.map((button) => <Button key={button.label} {...button} />)}
