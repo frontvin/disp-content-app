@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button, { IProps } from "./Button";
-import "./Buttons.css";
+import "./ButtonsGroup.css";
 
 const btnNames: IProps[] = [
   {
