@@ -1,34 +1,7 @@
 import React from "react";
-
-import Button, { IProps } from "./Button";
+import {btnNames} from "./App";
+import Button from "./Button";
 import "./ButtonsGroup.css";
-
-const btnNames: IProps[] = [
-  {
-    label: "Posts",
-    link: "/posts",
-  },
-  {
-    label: "Comments",
-    link: "/comments",
-  },
-  {
-    label: "Albums",
-    link: "/albums",
-  },
-  {
-    label: "Photos",
-    link: "/photos",
-  },
-  {
-    label: "Todos",
-    link: "/todos",
-  },
-  {
-    label: "Users",
-    link: "/users",
-  },
-];
 
 export function ButtonsGroup() {
   return (
