@@ -62,8 +62,8 @@ class App extends React.Component<{}, IState> {
     const { currentContent } = this.state;
     return (
       <div className="App">
-        <ButtonsGroup content={this.getNewContent} />
-        <Content content={currentContent} />
+        <ButtonsGroup getContent={this.getNewContent} />
+        <Content displayContent={currentContent} />
       </div>
     );
   }
